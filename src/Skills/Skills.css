@@ -1,0 +1,231 @@
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0.5vmax;
+  margin-top: 0vmax;
+}
+
+.skillscartoon {
+  background-image: url("./Images/skillscaroon.jpeg");
+  background-size: cover;
+  border-radius: 150px;
+  height: 50vh;
+  width: 30%;
+}
+@media (max-width: 1400px) {
+  .skillscartoon {
+    display: none;
+  }
+}
+
+.floatcontainer {
+  position: relative;
+  display: flex;
+  margin-top: 2em;
+}
+
+@keyframes item1 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.floatitems1 {
+  position: absolute;
+  height: 3vmax;
+  width: 3.3vmax;
+  margin-left: 3vmax;
+  animation: item1 3s infinite alternate;
+  background-image: url("./Images/React.png");
+  background-size: cover;
+}
+
+.floatitems2 {
+  position: absolute;
+  height: 3vmax;
+  width: 3.3vmax;
+  margin-left: 1.2vmax;
+  margin-top: 10vmax;
+  animation: item1 2.2s infinite alternate;
+  background-image: url("./Images/Java.png");
+  background-size: cover;
+}
+
+.floatitems3 {
+  position: absolute;
+  height: 3vmax;
+  width: 3vmax;
+  margin-left: 10vmax;
+  margin-top: 4vmax;
+  animation: item1 2.5s infinite alternate;
+  background-image: url("./Images/MongoDB.png");
+  background-size: cover;
+}
+
+.floatitems4 {
+  position: absolute;
+  height: 2vmax;
+  width: 2vmax;
+  margin-left: 15vmax;
+  margin-top: 0vmax;
+  animation: item1 2.7s infinite alternate;
+  background-image: url("./Images/JavaScript.png");
+  background-size: cover;
+}
+
+.floatitems5 {
+  position: absolute;
+  height: 3vmax;
+  width: 3vmax;
+  margin-left: 21vmax;
+  margin-top: 1vmax;
+  animation: item1 2.9s infinite alternate;
+  background-image: url("./Images/git.png");
+  background-size: cover;
+}
+
+.floatitems6 {
+  position: absolute;
+  height: 3vmax;
+  width: 3vmax;
+  margin-left: 24vmax;
+  margin-top: 7vmax;
+  animation: item1 2.6s infinite alternate;
+  background-image: url("./Images/CSS.png");
+  background-size: cover;
+}
+
+.maincontainerlist {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.skillshead {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  margin-bottom: 5vh;
+}
+
+.skillsupline {
+  background-color: #e9c46a;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  left: 0;
+  top: 0;
+}
+
+.skillheadname {
+  font-size: xx-large;
+  color: #e9c46a;
+  font-weight: bolder;
+}
+
+.skillsdownline {
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: #e9c46a;
+}
+
+#headinghover:hover > .skillshead > .skillsupline {
+  left: 90%;
+  transition: all 1s ease;
+}
+
+#headinghover:hover > .skillshead > .skillsdownline {
+  right: 90%;
+  transition: all 1s ease;
+}
+
+#headinghover:not(hover) > .skillshead > .skillsupline {
+  left: 0;
+  transition: all 1s ease;
+}
+
+#headinghover:not(hover) > .skillshead > .skillsdownline {
+  right: 0;
+  transition: all 1s ease;
+}
+
+.imagescontainer {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 3.8em;
+  padding: 5%;
+  column-gap: 4.8em;
+  text-align: center;
+}
+
+.shadow {
+  width: 140%;
+  height: 140%;
+  filter: blur(10px) opacity(0.15);
+  z-index: 0;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.imgitems {
+  display: flex;
+  height: 5vmax;
+  width: 5vmax;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skillimgs {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.skillnames {
+  margin-top: 0.5em;
+  color: white;
+  z-index: 2;
+}
+@media (max-width: 1320px) {
+  .maincontainer {
+    /* margin-left: 12vmax; */
+  }
+
+  .maincontainerlist {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .maincontainer {
+    margin-top: 6vmax;
+  }
+}
+@media (max-width: 450px) {
+  .maincontainer {
+    margin-top: 16vmax;
+  }
+}
+@media (max-width: 350px) {
+  .maincontainer {
+    margin-top: 25vmax;
+  }
+}

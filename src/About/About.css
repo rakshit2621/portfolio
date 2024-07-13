@@ -1,0 +1,145 @@
+#aboutflex {
+  width: 90vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 92vmin;
+  margin-top: 12vh;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  .profilepicandloc {
+    display: none;
+  }
+  .aboutparamedia {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 600px) {
+  .profilepicandloc {
+    display: none;
+  }
+  .aboutparamedia {
+    font-size: large;
+    margin-top: 3vh;
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 800px) {
+  .profilepicandloc {
+    display: none;
+  }
+}
+
+.intropara {
+  font-size: xx-large;
+  padding-left: 6vw;
+  margin-right: 2vw;
+}
+
+.handwave {
+  transform-origin: bottom;
+  position: absolute;
+  animation: shake 1s linear infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+
+.profilepic {
+  height: 40vh;
+  border-radius: 50%;
+  padding-right: 5vw;
+}
+
+.mylocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0vmax;
+  font-size: large;
+}
+
+#resumecontainer {
+  color: rgb(216, 252, 255);
+  background-color: #652c91;
+  margin-top: 1em;
+  height: 4.8em;
+  width: 15em;
+  border-radius: 20px;
+  position: relative;
+  font-family: inherit;
+  font-weight: bolder;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#resumecontainer:hover > .resumeonhover {
+  background-color: #8954b1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#resumecontainer:hover > .resumeonhover > span > .resumeonhoveranimateup {
+  animation: downloadfromup 0.4s linear forwards;
+}
+#resumecontainer:hover > .resumeonhover > span > a > .resumeonhoveranimatedown {
+  animation: linkfromdown 0.4s linear forwards;
+}
+
+.resumeonhover {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+}
+
+#resumecontainer:hover {
+  background-color: #8954b1;
+}
+
+.resumeonhoveranimateup {
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0.4em;
+  margin-top: 0.6em;
+}
+
+@keyframes downloadfromup {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.resumeonhoveranimatedown {
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0.4em;
+  margin-top: 0.6em;
+}
+
+@keyframes linkfromdown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

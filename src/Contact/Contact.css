@@ -1,0 +1,181 @@
+#contactmaincontainer {
+  width: 80vw;
+  height: 60vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contactinnercontainer {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.contactsometext {
+  color: white;
+  text-align: center;
+  padding: 1vmax;
+}
+
+.contacthead {
+  text-align: center;
+  font-weight: bolder;
+  color: #e9c46a;
+}
+
+.contactheadbelowline {
+  height: 2px;
+  width: 8em;
+  align-content: center;
+  border-radius: 100%;
+}
+
+.contactflexbox {
+  position: relative;
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .contactflexbox {
+    width: 45vw;
+  }
+}
+@media (max-width: 1000px) {
+  .contactflexbox {
+    width: 57vw;
+  }
+}
+@media (max-width: 800px) {
+  .contactflexbox {
+    width: 65vw;
+  }
+  .contactsometext {
+    font-size: medium;
+  }
+}
+@media (max-width: 480px) {
+  .contactflexbox {
+    width: 80vw;
+  }
+}
+@media (max-width: 340px) {
+  .contactflexbox {
+    width: 85vw;
+  }
+}
+
+.contactphno {
+  color: white;
+  text-align: center;
+}
+
+.contactgit {
+  background-color: rgb(247, 252, 253);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-image: url("./ContactImages/contactgit.png");
+  background-size: cover;
+}
+
+.contactgit:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.contactgit:not(hover) {
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+.contactinsta {
+  background-color: rgb(247, 252, 253);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-image: url("./ContactImages/contactinsta.png");
+  background-size: cover;
+}
+
+.contactinsta:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.contactinsta:not(hover) {
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+.contactmail {
+  background-color: rgb(247, 252, 253);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-image: url("./ContactImages/contactmail.png");
+  background-size: cover;
+}
+
+.contactmail:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.contactmail:not(hover) {
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+.contactx {
+  background-color: rgb(247, 252, 253);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-image: url("./ContactImages/contactx.png");
+  background-size: cover;
+}
+
+.contactx:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.contactx:not(hover) {
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+.contactlinkedin {
+  background-color: rgb(247, 252, 253);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-image: url("./ContactImages/contactlinkedin.png");
+  background-size: cover;
+}
+
+.contactlinkedin:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.contactlinkedin:not(hover) {
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+#contactlastlinedraw {
+  width: 100%;
+}
+
+#contactlastline {
+  color: white;
+}

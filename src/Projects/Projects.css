@@ -1,0 +1,192 @@
+#projectmaincontainer {
+  padding: 1vmax;
+  width: 75vw;
+  margin-top: 8vmax;
+}
+
+#projecthead {
+  position: relative;
+  width: fit-content;
+}
+
+.projectupline {
+  position: absolute;
+  background-color: #e9c46a;
+  height: 2px;
+  width: 15px;
+  top: 0;
+  left: 0;
+}
+
+.projectheadname {
+  font-size: xx-large;
+  color: #e9c46a;
+  font-weight: bolder;
+  padding: 0.3vmax;
+}
+
+.projectdownline {
+  position: absolute;
+  background-color: #e9c46a;
+  height: 2px;
+  width: 15px;
+  bottom: 0;
+  right: 0;
+}
+
+#projecthead:hover > .projectupline {
+  left: 90%;
+  transition: all 1s ease;
+}
+
+#projecthead:hover > .projectdownline {
+  right: 90%;
+  transition: all 1s ease;
+}
+
+#projecthead:not(hover) > .projectupline {
+  left: 0;
+  transition: all 1s ease;
+}
+
+#projecthead:not(hover) > .projectdownline {
+  right: 0;
+  transition: all 1s ease;
+}
+
+#projectcontainer1 {
+  display: flex;
+  padding: 2max;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+  width: 100%;
+  height: 100%;
+  row-gap: 4vmax;
+}
+
+.projectp {
+  height: 36vh;
+  width: 32vw;
+  padding: 1vmax;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pname {
+  font-size: 3vmax;
+  text-align: end;
+  word-wrap: break-word;
+}
+
+@keyframes proj {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+
+.projectp:hover > .innerp {
+  animation: proj 0.3s linear forwards;
+  z-index: 2;
+}
+
+.projectp:not(hover) > .innerp {
+  animation: projnot 0.4s linear forwards;
+  z-index: 2;
+}
+
+@keyframes projnot {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.innerp {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding-top: 1.3vmax;
+  height: 100%;
+  border-radius: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: space-around;
+  align-items: start;
+  z-index: 1;
+  top: 100%;
+}
+
+.innergitlink {
+  width: 45px;
+  height: 45px;
+  background-image: url("./ProjectImgs/projgit.png");
+  background-size: cover;
+}
+
+.innergitlink:hover {
+  transform: scale(1.15);
+  transition: all 0.5s ease;
+}
+
+.innergitlink:not(hover) {
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.innervidlink {
+  width: 45px;
+  height: 45px;
+  background-image: url("./ProjectImgs/projvid.png");
+  background-size: cover;
+}
+
+.innervidlink:hover {
+  transform: scale(1.15);
+  transition: all 0.5s ease;
+}
+
+.innervidlink:not(hover) {
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.innervidlink {
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.innerdiploylink {
+  width: 45px;
+  height: 45px;
+  background-image: url("./ProjectImgs/projdiplink.png");
+  background-size: cover;
+}
+
+.innerdiploylink:hover {
+  transform: scale(1.15);
+  transition: all 0.5s ease;
+}
+
+.innerdiploylink:not(hover) {
+  transform: scale(1);
+  transition: all 1s ease;
+}
+@media (max-width: 1020px) {
+  #projectcontainer1 {
+    flex-direction: column;
+  }
+  .projectp {
+    width: 60vw;
+    height: 25vh;
+  }
+}
