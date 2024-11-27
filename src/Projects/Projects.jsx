@@ -11,6 +11,34 @@ function Projects() {
           <span className="projectdownline"></span>
         </div>
         <div id="projectcontainer1">
+          <div className="projectp" style={{ backgroundColor: "#E9ECF5" }}>
+            <p
+              className="pname"
+              style={{ fontSize: "3vmax", paddingLeft: "12vmax" }}
+            >
+              <b>Simplauth</b>
+            </p>
+            <div className="innerp">
+              <a
+                className="innergitlink"
+                href="https://github.com/rakshit2621/simplauth-website"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+              <a
+                className="innervidlink"
+                href="https://drive.google.com/file/d/1RNOuJ37iFgkJZmiQCH9JtREb3IxLWlKz/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+              <a
+                className="innerdiploylink"
+                href="https://simplauth-website-git-master-rakshitachopade-gmailcoms-projects.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+            </div>
+          </div>
           <div className="projectp" style={{ backgroundColor: "#3949a3" }}>
             <p className="pname" style={{ fontSize: "3vmax" }}>
               <b>Virtual Tourist Guide</b>
