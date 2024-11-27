@@ -11,7 +11,7 @@ function Projects() {
           <span className="projectdownline"></span>
         </div>
         <div id="projectcontainer1">
-          <div className="projectp" style={{ backgroundColor: "#E9ECF5" }}>
+          <div className="projectp" style={{ backgroundColor: "#6B717E" }}>
             <p
               className="pname"
               style={{ fontSize: "3vmax", paddingLeft: "12vmax" }}
